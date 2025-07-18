@@ -1,5 +1,5 @@
 # amazon-analysis
-Análise de dados baseada no [dataset de vendas da Amazon](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset), com foco em redes de relacionamentos entre produtos e usuários. O principal intuito é explorar as relações dos grafos a partir das relações dos produtos e avaliações de usuários em produtos, permitindo visualizar a rede em diferentes modos, calcular métricas a partir dos dados e visualizar as distribuições de centralidade de nós.
+Análise de dados baseada no [dataset de vendas da Amazon](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset), com foco em redes de relacionamentos entre produtos e usuários. O principal intuito é explorar as relações dos grafos a partir das relações dos produtos e avaliações de usuários em produtos, permitindo visualizar a rede em diferentes modos, calcular métricas a partir dos dados e visualizar as distribuições de centralidade de nós. Cada produto é um nó, e uma aresta conecta produtos que foram avaliados por usuários em comum.
 
 # Acesso à aplicação
 - Hospedagem Genphi (GitHub Pages):
