@@ -112,7 +112,7 @@ def metrics(G):
   is_directed = G.is_directed()
 
   st.write(f"**Densidade da rede:** {density:.4f}")
-  st.write(f"**Espardidade da rede:** {esparsy:.4f}")
+  st.write(f"**Esparsidade da rede:** {esparsy:.4f}")
   st.write(f"**Assortatividade:** {assortativity:.4f}")
   st.write(f"**Coeficiente de clustering global:** {clustering:.4f}")
   for node, value in clusteringLocal.items():
