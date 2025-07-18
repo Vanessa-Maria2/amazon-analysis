@@ -13,9 +13,9 @@
     "title": "Test graph"
   },
   "legend": {
-    "edgeLabel": "Edge description",
+    "edgeLabel": "avaliações em comum",
     "colorLabel": "Modularity",
-    "nodeLabel": "Node description"
+    "nodeLabel": "produto"
   },
   "features": {
     "search": true,
