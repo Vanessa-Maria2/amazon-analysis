@@ -19,6 +19,7 @@ html_content = got.visualize_graph(selected_graph)
 
 components.html(html_content, height = 1200,width=1000)
 
+got.histogramEmpiricalDistributionDegree(data)
 got.matrizAdjacencia(data)
 got.diameterAndPeriphery(data)
 got.node_centrality(data)

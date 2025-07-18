@@ -4,6 +4,8 @@ from pyvis.network import Network
 import pandas as pd
 import streamlit as st
 from IPython.display import display, HTML
+import numpy as np
+import plotly.graph_objects as go
 
 def graph_full(url):
     G = nx.Graph()
@@ -150,4 +152,19 @@ def diameterAndPeriphery(G):
     ax.set_title(f"Periferia da Rede (nós vermelhos) - Diâmetro: {diameter}")
     ax.axis('off')
     st.pyplot(fig)
+
+def histogramEmpiricalDistributionDegree(G):
+    degrees = [G.degree(node) for node in G.nodes()]
+    hist, bins = np.histogram(degrees, bins=10, density=True)
+
+    fig = go.Figure(
+        data=[go.Bar(x=bins[:-1], y=hist, marker_color='lightblue', marker_line_color='gray')],
+        layout=go.Layout(
+            title="Histograma de Distribuição Empírica de Grau",
+            xaxis=dict(title="Grau"),
+            yaxis=dict(title="Densidade"),
+            bargap=0.1
+        )
+    )
     
+    st.plotly_chart(fig, use_container_width=True)
